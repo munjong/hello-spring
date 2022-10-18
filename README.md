@@ -17,7 +17,7 @@ Controller - Service - Repository 의 의존관계를 가지고 있으면
 Controller 에서 필요한 Service 객체를,
 Service 에서 필요한 Repository 객체를
 스프링에서 주입해준다
-(대부분 생성자에 등록)
+(대부분 생성자에 등록하는데 생성자가 하나일때는 생략 가능)
 
 컴포넌트 스캔 방식 대신에 자바코드로 직접 등록하는 방법
 클래스에 @Configuration 어노테이션을 등록해주고
