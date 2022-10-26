@@ -1,10 +1,4 @@
 # hello-spring
-# hello-spring
-# hello-spring
-# hello-spring
-# hello-spring
-
-
 
 컴포넌트 스캔 방식
 @Component 어노테이션으로 스프링빈에 등록해주면
@@ -24,3 +18,13 @@ Service 에서 필요한 Repository 객체를
 @Bean 으로 객체 등록
 -> 이 방법의 장점은 인터페이스 구조로 되있는 클래스의 구현 클래스를 변경해야 할 경우
 이 부분만 수정해주면 됨
+
+스프링 데이터 JPA가 SpringDataJpaMemberRepository 를 스프링 빈으로 자동 등록해준다
+
+AOP
+공통관심사항과 핵심관리사항의 분리
+Around 어노테이션으로 등록된 패키지의 메서드가 호출될때 인터셉트해서 처리하는데
+helloController -> memberService 기존 관계에서
+helloController -> memberService(프록시 aop가 생성) -> memberService(실제) 프록시 생성
+객체를 springbean 에서 관리하기 때문에 가능한 기술
+
